@@ -26,7 +26,7 @@ http://localhost:8000/docs
 
 ## How to use?
 
-> docker-compose up service
+> docker-compose up
 
 [Call endpoints](./service.http):
 
