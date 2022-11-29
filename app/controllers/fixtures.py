@@ -13,8 +13,8 @@ league_id = os.getenv("LEAGUE_ID")
 
 
 @fixtures_router.get(f"/fixtures/league/{league_id}", tags=["fixtures"])
-async def get_fixtures(X_RapidAPI_Key: Union[str, None] = Header(default=None)) -> dict:
-    valid = validate_api_key(X_RapidAPI_Key)
+async def get_fixtures(toto_game_API_Key: Union[str, None] = Header(default=None)) -> dict:
+    valid = validate_api_key(toto_game_API_Key)
     if not valid:
         return {"message": "unauthorized"}
 

@@ -8,8 +8,8 @@ teams_router = APIRouter()
 
 
 @teams_router.get("/teams/search/Netherlands", tags=["teams"])
-async def get_teams(X_RapidAPI_Key: Union[str, None] = Header(default=None)) -> dict:
-    valid = validate_api_key(X_RapidAPI_Key)
+async def get_teams(toto_game_API_Key: Union[str, None] = Header(default=None)) -> dict:
+    valid = validate_api_key(toto_game_API_Key)
     if not valid:
         return {"message": "unauthorized"}
 
