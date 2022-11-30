@@ -4,7 +4,7 @@ An api that mocks the response you would get from the soccer api. If returns fix
 
 ## Teams
 
-Return teams with name and logo
+Returns teams with name and logo
 
 ## Fixtures
 
@@ -26,13 +26,15 @@ http://localhost:8000/docs
 
 ## How to use?
 
-> docker-compose up
+> make run
 
 [Call endpoints](./service.http):
 
-> /teams
+> /
 
-> /fixtures
+> /teams [api key needed]
+
+> /fixtures [api key needed]
 
 ## Environment
 
